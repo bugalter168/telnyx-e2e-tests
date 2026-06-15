@@ -1,0 +1,14 @@
+{
+  "validContact": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@testcompany.io",
+    "phone": "5550001234",
+    "website": "https://testcompany.io",
+    "source": "Google Search",
+    "message": "Testing Telnyx services for business communication"
+  },
+  "invalidEmail": {
+    "email": "not-an-email"
+  }
+}

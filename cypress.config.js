@@ -1,10 +1,28 @@
-const { defineConfig } = require("cypress");
-require("dotenv").config();
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
+  projectId: 'YOUR_PROJECT_ID',
+
   e2e: {
     baseUrl: 'https://telnyx.com',
-    allowCypressEnv: false,
+    specPattern: 'cypress/e2e/**/*.cy.js',
+    supportFile: 'cypress/support/e2e.js',
+    fixturesFolder: 'cypress/fixtures',
+
+    viewportWidth: 1280,
+    viewportHeight: 800,
+
+    defaultCommandTimeout: 8000,
+    pageLoadTimeout: 30000,
+
+    retries: {
+      runMode: 2,
+      openMode: 0,
+    },
+
+    screenshotOnRunFailure: true,
+    video: false,
+
     setupNodeEvents(on, config) {
       return config;
     },
