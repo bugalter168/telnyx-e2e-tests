@@ -1,7 +1,7 @@
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
-  projectId: 'YOUR_PROJECT_ID',
+  projectId: 'e34bcf03-667a-4cac-9251-547f081c56f6',
 
   e2e: {
     baseUrl: 'https://telnyx.com',
