@@ -24,7 +24,7 @@ describe('Contact — Contact Us Form', () => {
 
   // ---------------------------------------------------------------------------
 
-  xit('TC-06 — shows inline validation error for invalid email format', () => {
+  it('TC-06 — shows inline validation error for invalid email format', () => {
     contactPage.fillForm({
       ...contactData.validContact,
       email: contactData.invalidEmail.email,
@@ -36,7 +36,7 @@ describe('Contact — Contact Us Form', () => {
 
   // ---------------------------------------------------------------------------
 
-  xit('TC-07 — shows required field errors when submitting empty form', () => {
+  it('TC-07 — shows required field errors when submitting empty form', () => {
     contactPage.submit();
 
     cy.url().should('include', '/contact-us');
